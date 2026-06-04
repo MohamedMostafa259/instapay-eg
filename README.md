@@ -14,7 +14,7 @@
   <a href="https://pypi.org/project/instapay-eg/"><img alt="Python" src="https://img.shields.io/pypi/pyversions/instapay-eg.svg"></a>
   <a href="https://github.com/MohamedMostafa259/instapay-eg/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/MohamedMostafa259/instapay-eg/actions/workflows/ci.yml/badge.svg"></a>
   <a href="https://codecov.io/gh/MohamedMostafa259/instapay-eg"><img alt="Coverage" src="https://codecov.io/gh/MohamedMostafa259/instapay-eg/branch/main/graph/badge.svg"></a>
-  <a href="https://github.com/MohamedMostafa259/instapay-eg/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/MohamedMostafa259/instapay-eg.svg?color=blue"></a>
+  <a href="https://github.com/MohamedMostafa259/instapay-eg/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/pypi/l/instapay-eg.svg?color=blue"></a>
 </p>
 
 ---
