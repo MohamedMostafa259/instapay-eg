@@ -1,0 +1,49 @@
+repos:
+  # Ruff: linter + formatter
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.15
+    hooks:
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+      - id: ruff-format
+
+  # ty: fast type checker
+  - repo: https://github.com/allganize/ty-pre-commit
+    rev: v0.0.40
+    hooks:
+      - id: ty-check
+        name: ty check
+        entry: uv run ty check
+        language: system
+        types_or: [python, pyi]
+        pass_filenames: false
+
+  # Bandit: security-focused static analysis (critical for an anti-phishing package)
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.9.4
+    hooks:
+      - id: bandit
+        args: ["-c", "pyproject.toml", "-r", "src"]
+        additional_dependencies: ["bandit[toml]"]
+        files: ^src/
+
+  # uv-lock: keeps uv.lock in sync when pyproject.toml changes
+  - repo: https://github.com/astral-sh/uv-pre-commit
+    rev: 0.11.17
+    hooks:
+      - id: uv-lock
+
+  # Standard file hygiene hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+        args: ["--unsafe"]
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ["--maxkb=500"]
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
