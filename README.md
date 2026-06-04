@@ -40,7 +40,6 @@ This SDK solves all of that with a clean, typed, zero-dependency core API.
 | 🔍 **Smart Parsing** | Extracts the URL from raw multi-line share-sheet text automatically |
 | 🛡️ **Anti-Phishing** | Detects lookalike domains, homoglyph attacks, and injection payloads |
 | 🔬 **Security Audit** | `audit_link()` returns a structured `SecurityReport` for logging |
-
 | 📱 **QR Codes** | PNG, SVG, bytes, and base64 - covers every web and mobile use case |
 | 🤝 **Pydantic v2** | Annotated types (`InstaPayLink`, `InstaPayHandle`) for FastAPI schemas |
 | 🦄 **Django** | `InstaPayLinkField` ORM field and `InstaPayHandleFormField` form field |
