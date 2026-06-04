@@ -1,0 +1,110 @@
+site_name: instapay-eg
+site_description: >-
+  Community SDK for parsing, validating, and generating
+  Egyptian InstaPay payment links. Zero dependencies for the core API.
+site_url: https://mohamedmostafa259.github.io/instapay-eg/
+repo_name: MohamedMostafa259/instapay-eg
+repo_url: https://github.com/MohamedMostafa259/instapay-eg
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: assets/logo.png
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - search.highlight
+    - search.suggest
+
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            members_order: source
+            separate_signature: true
+            show_signature_annotations: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quick Start: quickstart.md
+  - User Guide:
+    - Parsing Links: user-guide/parsing.md
+    - Security & Anti-Phishing: user-guide/security.md
+    - Building Links: user-guide/building-links.md
+    - QR Codes: user-guide/qr-codes.md
+  - Integrations:
+    - Pydantic & FastAPI: integrations/pydantic.md
+    - Django: integrations/django.md
+    - QR Code Library: integrations/qrcode.md
+  - API Reference:
+    - Core: api-reference/core.md
+    - Security: api-reference/security.md
+    - Exceptions: api-reference/exceptions.md
+    - Integrations: api-reference/integrations.md
+  - Changelog: changelog.md
+  - Contributing: contributing.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MohamedMostafa259
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/instapay-eg/
