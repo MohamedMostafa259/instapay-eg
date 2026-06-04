@@ -50,15 +50,15 @@ This SDK solves all of that with a clean, typed, zero-dependency core API.
 
 ## Installation
 
-=== "pip"
-    ```bash
-    pip install instapay-eg
-    ```
+**Using pip:**
+```bash
+pip install instapay-eg
+```
 
-=== "uv"
-    ```bash
-    uv add instapay-eg
-    ```
+**Using uv:**
+```bash
+uv add instapay-eg
+```
 
 ### With Optional Extras
 
