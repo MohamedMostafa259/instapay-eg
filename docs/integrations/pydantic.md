@@ -22,7 +22,7 @@ When a request comes in:
 - `link` accepts raw share-sheet text **or** a clean URL - both work
 - The `@instapay` suffix is stripped from `recipient` automatically
 - A `ValidationError` is raised if the link is a phishing URL or the handle is malformed
-- The stored value is always the clean `https://ipn.eg/...` URL
+- The stored value is always the clean `https://ipn.eg/S/...` URL
 
 ## FastAPI Example
 

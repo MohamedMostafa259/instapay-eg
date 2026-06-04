@@ -32,5 +32,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **MkDocs Material** documentation site
 - **Trusted Publishing** CI/CD to PyPI via GitHub Actions
 
-[Unreleased]: https://github.com/MohamedMostafa259/instapay-eg/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/MohamedMostafa259/instapay-eg/compare/v0.1.5...HEAD
+[0.1.5]: https://github.com/MohamedMostafa259/instapay-eg/releases/tag/v0.1.5
 [0.1.0]: https://github.com/MohamedMostafa259/instapay-eg/releases/tag/v0.1.0

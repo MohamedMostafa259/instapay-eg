@@ -262,7 +262,7 @@ def parse_text(text: str) -> InstaPayData:
     link = extract_link(text)
     if not link:
         raise LinkNotFoundError(
-            "No InstaPay URL (https://ipn.eg/...) was found in the provided text."
+            "No InstaPay URL (https://ipn.eg/S/...) was found in the provided text."
         )
 
     if not is_safe_link(link):
