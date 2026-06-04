@@ -19,7 +19,7 @@ _OFFICIAL_DOMAIN: str = "ipn.eg"
 # Validates the URL path contains only safe characters: alphanumeric, hyphen,
 # underscore, slash. Catches encoded payloads that slip through the injection
 # substring check.
-_VALID_URL_PATH_REGEX: re.Pattern[str] = re.compile(r"^[a-zA-Z0-9\-_/]+$")
+_VALID_URL_PATH_REGEX: re.Pattern[str] = re.compile(r"^/S/[a-zA-Z0-9\-_/]+$")
 
 # Patterns that suggest a lookalike / homoglyph / subdomain-spoof attack.
 # Add more patterns as new phishing techniques are discovered.

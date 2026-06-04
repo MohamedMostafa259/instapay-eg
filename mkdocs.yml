@@ -88,7 +88,7 @@ nav:
   - User Guide:
     - Parsing Links: user-guide/parsing.md
     - Security & Anti-Phishing: user-guide/security.md
-    - Building Links: user-guide/building-links.md
+    - Command Line (CLI): user-guide/cli.md
     - QR Codes: user-guide/qr-codes.md
   - Integrations:
     - Pydantic & FastAPI: integrations/pydantic.md

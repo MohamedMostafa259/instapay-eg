@@ -10,4 +10,3 @@
         - extract_url_id
         - is_valid_handle
         - normalize_handle
-        - build_link

@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **Core parsing**: `parse_text`, `extract_link`, `extract_handle`, `extract_url_id` - parse raw InstaPay share-sheet text into structured data
 - **`InstaPayData`** frozen dataclass with `link`, `handle`, `formatted_handle`, `raw_url_id`, and `is_verified` fields
-- **Link building**: `build_link(handle)` generates valid `https://ipn.eg` payment URLs
+
 - **Handle utilities**: `normalize_handle`, `is_valid_handle`
 - **Security module**: `is_safe_link`, `audit_link`, `is_phishing_domain`, `SecurityReport` dataclass
 - **Anti-phishing detection**: lookalike-domain, homoglyph, hyphen-substitution, and injection-payload checks
@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Pydantic v2 integration**: `InstaPayLink`, `InstaPayHandle` annotated types and `InstaPayPaymentModel`
 - **QR code integration**: `generate_qr`, `save_qr`, `qr_as_bytes`, `qr_as_base64`, `qr_as_svg_string` (requires `segno`)
 - **Django integration**: `InstaPayLinkField` ORM model field and `InstaPayHandleFormField` form field
-- **CLI**: `instapay parse`, `instapay audit`, `instapay build` commands
+- **CLI**: `instapay parse` and `instapay audit` commands
 - **100% test coverage** enforced in CI
 - **MkDocs Material** documentation site
 - **Trusted Publishing** CI/CD to PyPI via GitHub Actions

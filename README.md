@@ -21,7 +21,7 @@
 
 ## What is instapay-eg?
 
-**instapay-eg** is a Python SDK for working with [Egyptian InstaPay](https://instapay.eg/) payment links (`https://ipn.eg/...`).
+**instapay-eg** is a Python SDK for working with [Egyptian InstaPay](https://instapay.eg/) payment links (`https://ipn.eg/S/...`).
 
 InstaPay is Egypt's national instant payment network, built by the Egyptian Banks Company (EBC). Developers building Egyptian fintech applications - food delivery, e-commerce, booking platforms, freelance marketplaces - regularly need to:
 
@@ -40,11 +40,11 @@ This SDK solves all of that with a clean, typed, zero-dependency core API.
 | 🔍 **Smart Parsing** | Extracts the URL from raw multi-line share-sheet text automatically |
 | 🛡️ **Anti-Phishing** | Detects lookalike domains, homoglyph attacks, and injection payloads |
 | 🔬 **Security Audit** | `audit_link()` returns a structured `SecurityReport` for logging |
-| 🏗️ **Link Building** | `build_link(handle)` generates valid `ipn.eg` URLs programmatically |
+
 | 📱 **QR Codes** | PNG, SVG, bytes, and base64 - covers every web and mobile use case |
 | 🤝 **Pydantic v2** | Annotated types (`InstaPayLink`, `InstaPayHandle`) for FastAPI schemas |
 | 🦄 **Django** | `InstaPayLinkField` ORM field and `InstaPayHandleFormField` form field |
-| 💻 **CLI** | `instapay parse "..."`, `instapay audit "..."`, `instapay build --handle ...` |
+| 💻 **CLI** | `instapay parse "..."`, `instapay audit "..."` |
 | ✅ **100% Typed** | Full `py.typed` marker, passes strict type checking |
 | 🧪 **100% Tested** | 100% branch coverage enforced in CI |
 
@@ -160,9 +160,6 @@ $ instapay audit "https://ipn.eg.evil.com/S/alice/instapay/fake"
   Status:   ❌ UNSAFE - DO NOT USE
   Phishing: ❌ LOOKALIKE DOMAIN DETECTED
 
-# Build a link from a handle:
-$ instapay build --handle alice
-  Generated URL: https://ipn.eg/S/alice/instapay
 ```
 
 ## Documentation
