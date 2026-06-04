@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "baseBranches": ["main"],
+  "schedule": ["before 6am on the first day of the month"],
+  "timezone": "Africa/Cairo",
+  "pre-commit": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchPackagePatterns": ["*"],
+      "groupName": "Routine minor and patch updates"
+    }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^\\.github/workflows/.*\\.yml$"],
+      "matchStrings": ["version: \"(?<currentValue>[0-9.]+)\" # uv-version"],
+      "depNameTemplate": "astral-sh/uv",
+      "datasourceTemplate": "github-releases"
+    }
+  ]
+}

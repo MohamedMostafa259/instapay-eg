@@ -1,0 +1,44 @@
+name: Deploy Docs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - "src/**"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.1.0
+        with:
+          version: "0.11.17" # uv-version
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --locked --all-extras
+
+      - name: Build docs
+        run: uv run mkdocs build --strict
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
