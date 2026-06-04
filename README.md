@@ -1,7 +1,7 @@
 # instapay-eg
 
 <p align="center">
-  <img src="docs/assets/logo.png" alt="instapay-eg logo" width="200" />
+  <img src="https://raw.githubusercontent.com/MohamedMostafa259/instapay-eg/main/docs/assets/logo.png" alt="instapay-eg logo" width="200" />
 </p>
 
 <p align="center">
