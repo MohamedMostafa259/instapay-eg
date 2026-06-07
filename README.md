@@ -15,6 +15,7 @@
   <a href="https://github.com/MohamedMostafa259/instapay-eg/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/MohamedMostafa259/instapay-eg/actions/workflows/ci.yml/badge.svg"></a>
   <a href="https://codecov.io/gh/MohamedMostafa259/instapay-eg"><img alt="Coverage" src="https://codecov.io/gh/MohamedMostafa259/instapay-eg/branch/main/graph/badge.svg"></a>
   <a href="https://github.com/MohamedMostafa259/instapay-eg/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/pypi/l/instapay-eg.svg?color=blue"></a>
+  <a href="https://pepy.tech/projects/instapay-eg"><img alt="PyPI Downloads" src="https://static.pepy.tech/personalized-badge/instapay-eg?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads"></a>
 </p>
 
 <p align="center">

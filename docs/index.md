@@ -6,6 +6,10 @@
 </p>
 
 <p align="center">
+  <a href="https://pepy.tech/projects/instapay-eg"><img alt="PyPI Downloads" src="https://static.pepy.tech/personalized-badge/instapay-eg?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads"></a>
+</p>
+
+<p align="center">
   <a href="https://mohamedmostafa259.github.io/instapay-eg/"><strong>📚 Documentation</strong></a> &middot;
   <a href="https://pypi.org/project/instapay-eg/"><strong>📦 PyPI Page</strong></a> &middot;
   <a href="https://github.com/MohamedMostafa259/instapay-eg"><strong>🐙 GitHub Repo</strong></a>
