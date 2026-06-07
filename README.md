@@ -17,6 +17,12 @@
   <a href="https://github.com/MohamedMostafa259/instapay-eg/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/pypi/l/instapay-eg.svg?color=blue"></a>
 </p>
 
+<p align="center">
+  <a href="https://mohamedmostafa259.github.io/instapay-eg/"><strong>📚 Documentation</strong></a> &middot;
+  <a href="https://pypi.org/project/instapay-eg/"><strong>📦 PyPI Page</strong></a> &middot;
+  <a href="https://github.com/MohamedMostafa259/instapay-eg"><strong>🐙 GitHub Repo</strong></a>
+</p>
+
 ---
 
 ## What is instapay-eg?

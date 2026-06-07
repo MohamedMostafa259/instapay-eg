@@ -5,6 +5,12 @@
   Zero dependencies for the core API. Built for Egyptian developers.
 </p>
 
+<p align="center">
+  <a href="https://mohamedmostafa259.github.io/instapay-eg/"><strong>📚 Documentation</strong></a> &middot;
+  <a href="https://pypi.org/project/instapay-eg/"><strong>📦 PyPI Page</strong></a> &middot;
+  <a href="https://github.com/MohamedMostafa259/instapay-eg"><strong>🐙 GitHub Repo</strong></a>
+</p>
+
 ## What Can It Do?
 
 In three lines of code:
